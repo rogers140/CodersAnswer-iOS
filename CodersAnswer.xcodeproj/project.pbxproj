@@ -1,0 +1,831 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF0735B718CEED6C0029DC50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0735B618CEED6C0029DC50 /* Foundation.framework */; };
+		FF0735B918CEED6C0029DC50 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0735B818CEED6C0029DC50 /* CoreGraphics.framework */; };
+		FF0735BB18CEED6C0029DC50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0735BA18CEED6C0029DC50 /* UIKit.framework */; };
+		FF0735C118CEED6C0029DC50 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF0735BF18CEED6C0029DC50 /* InfoPlist.strings */; };
+		FF0735C318CEED6C0029DC50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0735C218CEED6C0029DC50 /* main.m */; };
+		FF0735C718CEED6C0029DC50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0735C618CEED6C0029DC50 /* AppDelegate.m */; };
+		FF0735D018CEED6C0029DC50 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0735CF18CEED6C0029DC50 /* XCTest.framework */; };
+		FF0735D118CEED6C0029DC50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0735B618CEED6C0029DC50 /* Foundation.framework */; };
+		FF0735D218CEED6C0029DC50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0735BA18CEED6C0029DC50 /* UIKit.framework */; };
+		FF0735DA18CEED6C0029DC50 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF0735D818CEED6C0029DC50 /* InfoPlist.strings */; };
+		FF0735DC18CEED6C0029DC50 /* CodersAnswerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0735DB18CEED6C0029DC50 /* CodersAnswerTests.m */; };
+		FF0735EC18CEEE740029DC50 /* ICSDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0735E918CEEE740029DC50 /* ICSDrawerController.m */; };
+		FF0735ED18CEEE740029DC50 /* ICSDropShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0735EB18CEEE740029DC50 /* ICSDropShadowView.m */; };
+		FF0735F018CEEEC60029DC50 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0735EF18CEEEC60029DC50 /* MainViewController.m */; };
+		FF0735F318CEEF1F0029DC50 /* DrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0735F218CEEF1F0029DC50 /* DrawerViewController.m */; };
+		FF07360218CEEFE60029DC50 /* CodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF07360018CEEFE60029DC50 /* CodeViewController.m */; };
+		FF07360318CEEFE60029DC50 /* CodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF07360118CEEFE60029DC50 /* CodeViewController.xib */; };
+		FF43BC7E18D18675006F2B1B /* Problem.m in Sources */ = {isa = PBXBuildFile; fileRef = FF43BC7D18D18675006F2B1B /* Problem.m */; };
+		FF69116D18D13FB30069511D /* StarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF69116B18D13FB30069511D /* StarViewController.m */; };
+		FF69116E18D13FB30069511D /* StarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF69116C18D13FB30069511D /* StarViewController.xib */; };
+		FF69117218D1451D0069511D /* FeedBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF69117018D1451D0069511D /* FeedBackViewController.m */; };
+		FF69117318D1451D0069511D /* FeedBackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF69117118D1451D0069511D /* FeedBackViewController.xib */; };
+		FF73102918D3EF9C00265818 /* 3Sum Closest.html in Resources */ = {isa = PBXBuildFile; fileRef = FF73100B18D3EF9C00265818 /* 3Sum Closest.html */; };
+		FF73102A18D3EF9C00265818 /* 3Sum.html in Resources */ = {isa = PBXBuildFile; fileRef = FF73100C18D3EF9C00265818 /* 3Sum.html */; };
+		FF73102B18D3EF9C00265818 /* 4Sum.html in Resources */ = {isa = PBXBuildFile; fileRef = FF73100D18D3EF9C00265818 /* 4Sum.html */; };
+		FF73102C18D3EF9C00265818 /* Add Two Numbers.html in Resources */ = {isa = PBXBuildFile; fileRef = FF73100E18D3EF9C00265818 /* Add Two Numbers.html */; };
+		FF73102D18D3EF9C00265818 /* Container With Most Water.html in Resources */ = {isa = PBXBuildFile; fileRef = FF73100F18D3EF9C00265818 /* Container With Most Water.html */; };
+		FF73102E18D3EF9C00265818 /* Divide Two Integers.html in Resources */ = {isa = PBXBuildFile; fileRef = FF73101018D3EF9C00265818 /* Divide Two Integers.html */; };
+		FF73102F18D3EF9C00265818 /* Generate Parentheses.html in Resources */ = {isa = PBXBuildFile; fileRef = FF73101118D3EF9C00265818 /* Generate Parentheses.html */; };
+		FF73103018D3EF9C00265818 /* Implement strStr().html in Resources */ = {isa = PBXBuildFile; fileRef = FF73101218D3EF9C00265818 /* Implement strStr().html */; };
+		FF73103118D3EF9C00265818 /* Integer to Roman.html in Resources */ = {isa = PBXBuildFile; fileRef = FF73101318D3EF9C00265818 /* Integer to Roman.html */; };
+		FF73103218D3EF9C00265818 /* Letter Combinations of a Phone Number.html in Resources */ = {isa = PBXBuildFile; fileRef = FF73101418D3EF9C00265818 /* Letter Combinations of a Phone Number.html */; };
+		FF73103318D3EF9C00265818 /* Longest Common Prefix.html in Resources */ = {isa = PBXBuildFile; fileRef = FF73101518D3EF9C00265818 /* Longest Common Prefix.html */; };
+		FF73103418D3EF9C00265818 /* Longest Palindromic Substring.html in Resources */ = {isa = PBXBuildFile; fileRef = FF73101618D3EF9C00265818 /* Longest Palindromic Substring.html */; };
+		FF73103518D3EF9C00265818 /* Longest Substring Without Repeating Characters.html in Resources */ = {isa = PBXBuildFile; fileRef = FF73101718D3EF9C00265818 /* Longest Substring Without Repeating Characters.html */; };
+		FF73103618D3EF9C00265818 /* Median of Two Sorted Arrays.html in Resources */ = {isa = PBXBuildFile; fileRef = FF73101818D3EF9C00265818 /* Median of Two Sorted Arrays.html */; };
+		FF73103718D3EF9C00265818 /* Merge k Sorted Lists.html in Resources */ = {isa = PBXBuildFile; fileRef = FF73101918D3EF9C00265818 /* Merge k Sorted Lists.html */; };
+		FF73103818D3EF9C00265818 /* Next Permutation.html in Resources */ = {isa = PBXBuildFile; fileRef = FF73101A18D3EF9C00265818 /* Next Permutation.html */; };
+		FF73103918D3EF9C00265818 /* Palindrome Number.html in Resources */ = {isa = PBXBuildFile; fileRef = FF73101B18D3EF9C00265818 /* Palindrome Number.html */; };
+		FF73103A18D3EF9C00265818 /* Regular Expression Matching.html in Resources */ = {isa = PBXBuildFile; fileRef = FF73101C18D3EF9C00265818 /* Regular Expression Matching.html */; };
+		FF73103B18D3EF9C00265818 /* Remove Duplicates from Sorted Array.html in Resources */ = {isa = PBXBuildFile; fileRef = FF73101D18D3EF9C00265818 /* Remove Duplicates from Sorted Array.html */; };
+		FF73103C18D3EF9C00265818 /* Remove Element.html in Resources */ = {isa = PBXBuildFile; fileRef = FF73101E18D3EF9C00265818 /* Remove Element.html */; };
+		FF73103D18D3EF9C00265818 /* Remove Nth Node From End of List.html in Resources */ = {isa = PBXBuildFile; fileRef = FF73101F18D3EF9C00265818 /* Remove Nth Node From End of List.html */; };
+		FF73103E18D3EF9C00265818 /* Reverse Integer.html in Resources */ = {isa = PBXBuildFile; fileRef = FF73102018D3EF9C00265818 /* Reverse Integer.html */; };
+		FF73103F18D3EF9C00265818 /* Reverse Nodes in k-Group.html in Resources */ = {isa = PBXBuildFile; fileRef = FF73102118D3EF9C00265818 /* Reverse Nodes in k-Group.html */; };
+		FF73104018D3EF9C00265818 /* Roman to Integer.html in Resources */ = {isa = PBXBuildFile; fileRef = FF73102218D3EF9C00265818 /* Roman to Integer.html */; };
+		FF73104118D3EF9C00265818 /* String to Integer.html in Resources */ = {isa = PBXBuildFile; fileRef = FF73102318D3EF9C00265818 /* String to Integer.html */; };
+		FF73104218D3EF9C00265818 /* Substring with Concatenation of All Words.html in Resources */ = {isa = PBXBuildFile; fileRef = FF73102418D3EF9C00265818 /* Substring with Concatenation of All Words.html */; };
+		FF73104318D3EF9C00265818 /* Swap Nodes in Pairs.html in Resources */ = {isa = PBXBuildFile; fileRef = FF73102518D3EF9C00265818 /* Swap Nodes in Pairs.html */; };
+		FF73104418D3EF9C00265818 /* Two Sum.html in Resources */ = {isa = PBXBuildFile; fileRef = FF73102618D3EF9C00265818 /* Two Sum.html */; };
+		FF73104518D3EF9C00265818 /* Valid Parentheses.html in Resources */ = {isa = PBXBuildFile; fileRef = FF73102718D3EF9C00265818 /* Valid Parentheses.html */; };
+		FF73104618D3EF9C00265818 /* ZigZag Conversion.html in Resources */ = {isa = PBXBuildFile; fileRef = FF73102818D3EF9C00265818 /* ZigZag Conversion.html */; };
+		FF855B5918D0A57A0060E2DF /* FileHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FF855B5818D0A57A0060E2DF /* FileHandler.m */; };
+		FF8B548A18D54A6C00AF37C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF8B548918D54A6C00AF37C3 /* Images.xcassets */; };
+		FFA6171D18CF092700FB15FA /* highlight.pack.js in Resources */ = {isa = PBXBuildFile; fileRef = FFA616FB18CF092700FB15FA /* highlight.pack.js */; };
+		FFA6172218CF092700FB15FA /* xcode.css in Resources */ = {isa = PBXBuildFile; fileRef = FFA6170118CF092700FB15FA /* xcode.css */; };
+		FFA6172318CF092700FB15FA /* phone pad.png in Resources */ = {isa = PBXBuildFile; fileRef = FFA6170318CF092700FB15FA /* phone pad.png */; };
+		FFA6172418CF092700FB15FA /* zigzag.png in Resources */ = {isa = PBXBuildFile; fileRef = FFA6170418CF092700FB15FA /* zigzag.png */; };
+		FFABD95018D08862006D9CC4 /* ProblemListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABD94E18D08862006D9CC4 /* ProblemListViewController.m */; };
+		FFABD95118D08862006D9CC4 /* ProblemListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFABD94F18D08862006D9CC4 /* ProblemListViewController.xib */; };
+		FFAC99E618D00C4500F79D5A /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAC99E418D00C4500F79D5A /* AboutViewController.m */; };
+		FFAC99E718D00C4500F79D5A /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFAC99E518D00C4500F79D5A /* AboutViewController.xib */; };
+		FFB0A6A2199E0CA000DDC65E /* rainwatertrap.png in Resources */ = {isa = PBXBuildFile; fileRef = FFB0A6A1199E0CA000DDC65E /* rainwatertrap.png */; };
+		FFB0A6B6199E0D1800DDC65E /* Anagrams.html in Resources */ = {isa = PBXBuildFile; fileRef = FFB0A6A3199E0D1800DDC65E /* Anagrams.html */; };
+		FFB0A6B7199E0D1800DDC65E /* Combination Sum II.html in Resources */ = {isa = PBXBuildFile; fileRef = FFB0A6A4199E0D1800DDC65E /* Combination Sum II.html */; };
+		FFB0A6B8199E0D1800DDC65E /* Combination Sum.html in Resources */ = {isa = PBXBuildFile; fileRef = FFB0A6A5199E0D1800DDC65E /* Combination Sum.html */; };
+		FFB0A6B9199E0D1800DDC65E /* Count and Say.html in Resources */ = {isa = PBXBuildFile; fileRef = FFB0A6A6199E0D1800DDC65E /* Count and Say.html */; };
+		FFB0A6BA199E0D1800DDC65E /* First Missing Positive.html in Resources */ = {isa = PBXBuildFile; fileRef = FFB0A6A7199E0D1800DDC65E /* First Missing Positive.html */; };
+		FFB0A6BB199E0D1800DDC65E /* Jump Game II.html in Resources */ = {isa = PBXBuildFile; fileRef = FFB0A6A8199E0D1800DDC65E /* Jump Game II.html */; };
+		FFB0A6BC199E0D1800DDC65E /* Longest Valid Parentheses.html in Resources */ = {isa = PBXBuildFile; fileRef = FFB0A6A9199E0D1800DDC65E /* Longest Valid Parentheses.html */; };
+		FFB0A6BD199E0D1800DDC65E /* Multiply Strings.html in Resources */ = {isa = PBXBuildFile; fileRef = FFB0A6AA199E0D1800DDC65E /* Multiply Strings.html */; };
+		FFB0A6BE199E0D1800DDC65E /* Permutations II.html in Resources */ = {isa = PBXBuildFile; fileRef = FFB0A6AB199E0D1800DDC65E /* Permutations II.html */; };
+		FFB0A6BF199E0D1800DDC65E /* Permutations.html in Resources */ = {isa = PBXBuildFile; fileRef = FFB0A6AC199E0D1800DDC65E /* Permutations.html */; };
+		FFB0A6C0199E0D1800DDC65E /* Pow(x, n).html in Resources */ = {isa = PBXBuildFile; fileRef = FFB0A6AD199E0D1800DDC65E /* Pow(x, n).html */; };
+		FFB0A6C1199E0D1800DDC65E /* Rotate Image.html in Resources */ = {isa = PBXBuildFile; fileRef = FFB0A6AE199E0D1800DDC65E /* Rotate Image.html */; };
+		FFB0A6C2199E0D1800DDC65E /* Search for a Range.html in Resources */ = {isa = PBXBuildFile; fileRef = FFB0A6AF199E0D1800DDC65E /* Search for a Range.html */; };
+		FFB0A6C3199E0D1800DDC65E /* Search in Rotated Sorted Array.html in Resources */ = {isa = PBXBuildFile; fileRef = FFB0A6B0199E0D1800DDC65E /* Search in Rotated Sorted Array.html */; };
+		FFB0A6C4199E0D1800DDC65E /* Search Insert Position.html in Resources */ = {isa = PBXBuildFile; fileRef = FFB0A6B1199E0D1800DDC65E /* Search Insert Position.html */; };
+		FFB0A6C5199E0D1800DDC65E /* Sudoku Solver.html in Resources */ = {isa = PBXBuildFile; fileRef = FFB0A6B2199E0D1800DDC65E /* Sudoku Solver.html */; };
+		FFB0A6C6199E0D1800DDC65E /* Trapping Rain Water.html in Resources */ = {isa = PBXBuildFile; fileRef = FFB0A6B3199E0D1800DDC65E /* Trapping Rain Water.html */; };
+		FFB0A6C7199E0D1800DDC65E /* Valid Sudoku.html in Resources */ = {isa = PBXBuildFile; fileRef = FFB0A6B4199E0D1800DDC65E /* Valid Sudoku.html */; };
+		FFB0A6C8199E0D1800DDC65E /* Wildcard Matching.html in Resources */ = {isa = PBXBuildFile; fileRef = FFB0A6B5199E0D1800DDC65E /* Wildcard Matching.html */; };
+		FFDC024218CF444A00F851FD /* PickOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDC024018CF444A00F851FD /* PickOneViewController.m */; };
+		FFDC024318CF444A00F851FD /* PickOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFDC024118CF444A00F851FD /* PickOneViewController.xib */; };
+		FFDCD94218D52FA40038E506 /* LaunchImageTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDCD94118D52FA40038E506 /* LaunchImageTransition.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF0735D318CEED6C0029DC50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF0735AB18CEED6C0029DC50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF0735B218CEED6C0029DC50;
+			remoteInfo = CodersAnswer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF0735B318CEED6C0029DC50 /* CodersAnswer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodersAnswer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF0735B618CEED6C0029DC50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FF0735B818CEED6C0029DC50 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FF0735BA18CEED6C0029DC50 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FF0735BE18CEED6C0029DC50 /* CodersAnswer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CodersAnswer-Info.plist"; sourceTree = "<group>"; };
+		FF0735C018CEED6C0029DC50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF0735C218CEED6C0029DC50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF0735C418CEED6C0029DC50 /* CodersAnswer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodersAnswer-Prefix.pch"; sourceTree = "<group>"; };
+		FF0735C518CEED6C0029DC50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FF0735C618CEED6C0029DC50 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FF0735CE18CEED6C0029DC50 /* CodersAnswerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodersAnswerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF0735CF18CEED6C0029DC50 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FF0735D718CEED6C0029DC50 /* CodersAnswerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CodersAnswerTests-Info.plist"; sourceTree = "<group>"; };
+		FF0735D918CEED6C0029DC50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF0735DB18CEED6C0029DC50 /* CodersAnswerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodersAnswerTests.m; sourceTree = "<group>"; };
+		FF0735E818CEEE740029DC50 /* ICSDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSDrawerController.h; sourceTree = "<group>"; };
+		FF0735E918CEEE740029DC50 /* ICSDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSDrawerController.m; sourceTree = "<group>"; };
+		FF0735EA18CEEE740029DC50 /* ICSDropShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSDropShadowView.h; sourceTree = "<group>"; };
+		FF0735EB18CEEE740029DC50 /* ICSDropShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSDropShadowView.m; sourceTree = "<group>"; };
+		FF0735EE18CEEEC60029DC50 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		FF0735EF18CEEEC60029DC50 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		FF0735F118CEEF1F0029DC50 /* DrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerViewController.h; sourceTree = "<group>"; };
+		FF0735F218CEEF1F0029DC50 /* DrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerViewController.m; sourceTree = "<group>"; };
+		FF0735FF18CEEFE60029DC50 /* CodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeViewController.h; sourceTree = "<group>"; };
+		FF07360018CEEFE60029DC50 /* CodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeViewController.m; sourceTree = "<group>"; };
+		FF07360118CEEFE60029DC50 /* CodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CodeViewController.xib; sourceTree = "<group>"; };
+		FF43BC7C18D18675006F2B1B /* Problem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Problem.h; sourceTree = "<group>"; };
+		FF43BC7D18D18675006F2B1B /* Problem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem.m; sourceTree = "<group>"; };
+		FF69116A18D13FB30069511D /* StarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarViewController.h; sourceTree = "<group>"; };
+		FF69116B18D13FB30069511D /* StarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarViewController.m; sourceTree = "<group>"; };
+		FF69116C18D13FB30069511D /* StarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StarViewController.xib; sourceTree = "<group>"; };
+		FF69116F18D1451D0069511D /* FeedBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedBackViewController.h; sourceTree = "<group>"; };
+		FF69117018D1451D0069511D /* FeedBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedBackViewController.m; sourceTree = "<group>"; };
+		FF69117118D1451D0069511D /* FeedBackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedBackViewController.xib; sourceTree = "<group>"; };
+		FF73100B18D3EF9C00265818 /* 3Sum Closest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "3Sum Closest.html"; sourceTree = "<group>"; };
+		FF73100C18D3EF9C00265818 /* 3Sum.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 3Sum.html; sourceTree = "<group>"; };
+		FF73100D18D3EF9C00265818 /* 4Sum.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 4Sum.html; sourceTree = "<group>"; };
+		FF73100E18D3EF9C00265818 /* Add Two Numbers.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Add Two Numbers.html"; sourceTree = "<group>"; };
+		FF73100F18D3EF9C00265818 /* Container With Most Water.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Container With Most Water.html"; sourceTree = "<group>"; };
+		FF73101018D3EF9C00265818 /* Divide Two Integers.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Divide Two Integers.html"; sourceTree = "<group>"; };
+		FF73101118D3EF9C00265818 /* Generate Parentheses.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Generate Parentheses.html"; sourceTree = "<group>"; };
+		FF73101218D3EF9C00265818 /* Implement strStr().html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Implement strStr().html"; sourceTree = "<group>"; };
+		FF73101318D3EF9C00265818 /* Integer to Roman.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Integer to Roman.html"; sourceTree = "<group>"; };
+		FF73101418D3EF9C00265818 /* Letter Combinations of a Phone Number.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Letter Combinations of a Phone Number.html"; sourceTree = "<group>"; };
+		FF73101518D3EF9C00265818 /* Longest Common Prefix.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Longest Common Prefix.html"; sourceTree = "<group>"; };
+		FF73101618D3EF9C00265818 /* Longest Palindromic Substring.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Longest Palindromic Substring.html"; sourceTree = "<group>"; };
+		FF73101718D3EF9C00265818 /* Longest Substring Without Repeating Characters.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Longest Substring Without Repeating Characters.html"; sourceTree = "<group>"; };
+		FF73101818D3EF9C00265818 /* Median of Two Sorted Arrays.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Median of Two Sorted Arrays.html"; sourceTree = "<group>"; };
+		FF73101918D3EF9C00265818 /* Merge k Sorted Lists.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Merge k Sorted Lists.html"; sourceTree = "<group>"; };
+		FF73101A18D3EF9C00265818 /* Next Permutation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Next Permutation.html"; sourceTree = "<group>"; };
+		FF73101B18D3EF9C00265818 /* Palindrome Number.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Palindrome Number.html"; sourceTree = "<group>"; };
+		FF73101C18D3EF9C00265818 /* Regular Expression Matching.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Regular Expression Matching.html"; sourceTree = "<group>"; };
+		FF73101D18D3EF9C00265818 /* Remove Duplicates from Sorted Array.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Remove Duplicates from Sorted Array.html"; sourceTree = "<group>"; };
+		FF73101E18D3EF9C00265818 /* Remove Element.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Remove Element.html"; sourceTree = "<group>"; };
+		FF73101F18D3EF9C00265818 /* Remove Nth Node From End of List.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Remove Nth Node From End of List.html"; sourceTree = "<group>"; };
+		FF73102018D3EF9C00265818 /* Reverse Integer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Reverse Integer.html"; sourceTree = "<group>"; };
+		FF73102118D3EF9C00265818 /* Reverse Nodes in k-Group.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Reverse Nodes in k-Group.html"; sourceTree = "<group>"; };
+		FF73102218D3EF9C00265818 /* Roman to Integer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Roman to Integer.html"; sourceTree = "<group>"; };
+		FF73102318D3EF9C00265818 /* String to Integer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "String to Integer.html"; sourceTree = "<group>"; };
+		FF73102418D3EF9C00265818 /* Substring with Concatenation of All Words.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Substring with Concatenation of All Words.html"; sourceTree = "<group>"; };
+		FF73102518D3EF9C00265818 /* Swap Nodes in Pairs.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Swap Nodes in Pairs.html"; sourceTree = "<group>"; };
+		FF73102618D3EF9C00265818 /* Two Sum.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Two Sum.html"; sourceTree = "<group>"; };
+		FF73102718D3EF9C00265818 /* Valid Parentheses.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Valid Parentheses.html"; sourceTree = "<group>"; };
+		FF73102818D3EF9C00265818 /* ZigZag Conversion.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "ZigZag Conversion.html"; sourceTree = "<group>"; };
+		FF855B5718D0A57A0060E2DF /* FileHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileHandler.h; sourceTree = "<group>"; };
+		FF855B5818D0A57A0060E2DF /* FileHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileHandler.m; sourceTree = "<group>"; };
+		FF8B548918D54A6C00AF37C3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FFA616FB18CF092700FB15FA /* highlight.pack.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = highlight.pack.js; path = highlight/highlight.pack.js; sourceTree = "<group>"; };
+		FFA6170118CF092700FB15FA /* xcode.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = xcode.css; path = highlight/styles/xcode.css; sourceTree = "<group>"; };
+		FFA6170318CF092700FB15FA /* phone pad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "phone pad.png"; path = "image/phone pad.png"; sourceTree = "<group>"; };
+		FFA6170418CF092700FB15FA /* zigzag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zigzag.png; path = image/zigzag.png; sourceTree = "<group>"; };
+		FFABD94D18D08862006D9CC4 /* ProblemListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProblemListViewController.h; sourceTree = "<group>"; };
+		FFABD94E18D08862006D9CC4 /* ProblemListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProblemListViewController.m; sourceTree = "<group>"; };
+		FFABD94F18D08862006D9CC4 /* ProblemListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProblemListViewController.xib; sourceTree = "<group>"; };
+		FFAC99E318D00C4500F79D5A /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		FFAC99E418D00C4500F79D5A /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		FFAC99E518D00C4500F79D5A /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		FFB0A6A1199E0CA000DDC65E /* rainwatertrap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rainwatertrap.png; sourceTree = "<group>"; };
+		FFB0A6A3199E0D1800DDC65E /* Anagrams.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Anagrams.html; sourceTree = "<group>"; };
+		FFB0A6A4199E0D1800DDC65E /* Combination Sum II.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Combination Sum II.html"; sourceTree = "<group>"; };
+		FFB0A6A5199E0D1800DDC65E /* Combination Sum.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Combination Sum.html"; sourceTree = "<group>"; };
+		FFB0A6A6199E0D1800DDC65E /* Count and Say.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Count and Say.html"; sourceTree = "<group>"; };
+		FFB0A6A7199E0D1800DDC65E /* First Missing Positive.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "First Missing Positive.html"; sourceTree = "<group>"; };
+		FFB0A6A8199E0D1800DDC65E /* Jump Game II.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Jump Game II.html"; sourceTree = "<group>"; };
+		FFB0A6A9199E0D1800DDC65E /* Longest Valid Parentheses.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Longest Valid Parentheses.html"; sourceTree = "<group>"; };
+		FFB0A6AA199E0D1800DDC65E /* Multiply Strings.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Multiply Strings.html"; sourceTree = "<group>"; };
+		FFB0A6AB199E0D1800DDC65E /* Permutations II.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Permutations II.html"; sourceTree = "<group>"; };
+		FFB0A6AC199E0D1800DDC65E /* Permutations.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Permutations.html; sourceTree = "<group>"; };
+		FFB0A6AD199E0D1800DDC65E /* Pow(x, n).html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Pow(x, n).html"; sourceTree = "<group>"; };
+		FFB0A6AE199E0D1800DDC65E /* Rotate Image.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Rotate Image.html"; sourceTree = "<group>"; };
+		FFB0A6AF199E0D1800DDC65E /* Search for a Range.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Search for a Range.html"; sourceTree = "<group>"; };
+		FFB0A6B0199E0D1800DDC65E /* Search in Rotated Sorted Array.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Search in Rotated Sorted Array.html"; sourceTree = "<group>"; };
+		FFB0A6B1199E0D1800DDC65E /* Search Insert Position.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Search Insert Position.html"; sourceTree = "<group>"; };
+		FFB0A6B2199E0D1800DDC65E /* Sudoku Solver.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Sudoku Solver.html"; sourceTree = "<group>"; };
+		FFB0A6B3199E0D1800DDC65E /* Trapping Rain Water.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Trapping Rain Water.html"; sourceTree = "<group>"; };
+		FFB0A6B4199E0D1800DDC65E /* Valid Sudoku.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Valid Sudoku.html"; sourceTree = "<group>"; };
+		FFB0A6B5199E0D1800DDC65E /* Wildcard Matching.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Wildcard Matching.html"; sourceTree = "<group>"; };
+		FFDC023F18CF444A00F851FD /* PickOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickOneViewController.h; sourceTree = "<group>"; };
+		FFDC024018CF444A00F851FD /* PickOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickOneViewController.m; sourceTree = "<group>"; };
+		FFDC024118CF444A00F851FD /* PickOneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickOneViewController.xib; sourceTree = "<group>"; };
+		FFDCD94018D52FA40038E506 /* LaunchImageTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchImageTransition.h; sourceTree = "<group>"; };
+		FFDCD94118D52FA40038E506 /* LaunchImageTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchImageTransition.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF0735B018CEED6C0029DC50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF0735B918CEED6C0029DC50 /* CoreGraphics.framework in Frameworks */,
+				FF0735BB18CEED6C0029DC50 /* UIKit.framework in Frameworks */,
+				FF0735B718CEED6C0029DC50 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF0735CB18CEED6C0029DC50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF0735D018CEED6C0029DC50 /* XCTest.framework in Frameworks */,
+				FF0735D218CEED6C0029DC50 /* UIKit.framework in Frameworks */,
+				FF0735D118CEED6C0029DC50 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF0735AA18CEED6C0029DC50 = {
+			isa = PBXGroup;
+			children = (
+				FF8B548918D54A6C00AF37C3 /* Images.xcassets */,
+				FFA616E018CF092700FB15FA /* www */,
+				FF0735BC18CEED6C0029DC50 /* CodersAnswer */,
+				FF0735D518CEED6C0029DC50 /* CodersAnswerTests */,
+				FF0735B518CEED6C0029DC50 /* Frameworks */,
+				FF0735B418CEED6C0029DC50 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF0735B418CEED6C0029DC50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF0735B318CEED6C0029DC50 /* CodersAnswer.app */,
+				FF0735CE18CEED6C0029DC50 /* CodersAnswerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF0735B518CEED6C0029DC50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF0735B618CEED6C0029DC50 /* Foundation.framework */,
+				FF0735B818CEED6C0029DC50 /* CoreGraphics.framework */,
+				FF0735BA18CEED6C0029DC50 /* UIKit.framework */,
+				FF0735CF18CEED6C0029DC50 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF0735BC18CEED6C0029DC50 /* CodersAnswer */ = {
+			isa = PBXGroup;
+			children = (
+				FFDCD93F18D52F820038E506 /* LaunchImageTrans */,
+				FF43BC7B18D1859D006F2B1B /* Models */,
+				FF855B5618D0A5510060E2DF /* Tools */,
+				FF0735F418CEEF510029DC50 /* Views */,
+				FF0735E718CEEE740029DC50 /* ICSDrawerController */,
+				FF0735C518CEED6C0029DC50 /* AppDelegate.h */,
+				FF0735C618CEED6C0029DC50 /* AppDelegate.m */,
+				FF0735BD18CEED6C0029DC50 /* Supporting Files */,
+				FF0735EE18CEEEC60029DC50 /* MainViewController.h */,
+				FF0735EF18CEEEC60029DC50 /* MainViewController.m */,
+				FF0735F118CEEF1F0029DC50 /* DrawerViewController.h */,
+				FF0735F218CEEF1F0029DC50 /* DrawerViewController.m */,
+			);
+			path = CodersAnswer;
+			sourceTree = "<group>";
+		};
+		FF0735BD18CEED6C0029DC50 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF0735BE18CEED6C0029DC50 /* CodersAnswer-Info.plist */,
+				FF0735BF18CEED6C0029DC50 /* InfoPlist.strings */,
+				FF0735C218CEED6C0029DC50 /* main.m */,
+				FF0735C418CEED6C0029DC50 /* CodersAnswer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF0735D518CEED6C0029DC50 /* CodersAnswerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF0735DB18CEED6C0029DC50 /* CodersAnswerTests.m */,
+				FF0735D618CEED6C0029DC50 /* Supporting Files */,
+			);
+			path = CodersAnswerTests;
+			sourceTree = "<group>";
+		};
+		FF0735D618CEED6C0029DC50 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF0735D718CEED6C0029DC50 /* CodersAnswerTests-Info.plist */,
+				FF0735D818CEED6C0029DC50 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF0735E718CEEE740029DC50 /* ICSDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				FF0735E818CEEE740029DC50 /* ICSDrawerController.h */,
+				FF0735E918CEEE740029DC50 /* ICSDrawerController.m */,
+				FF0735EA18CEEE740029DC50 /* ICSDropShadowView.h */,
+				FF0735EB18CEEE740029DC50 /* ICSDropShadowView.m */,
+			);
+			path = ICSDrawerController;
+			sourceTree = "<group>";
+		};
+		FF0735F418CEEF510029DC50 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF0735FF18CEEFE60029DC50 /* CodeViewController.h */,
+				FF07360018CEEFE60029DC50 /* CodeViewController.m */,
+				FF07360118CEEFE60029DC50 /* CodeViewController.xib */,
+				FFDC023F18CF444A00F851FD /* PickOneViewController.h */,
+				FFDC024018CF444A00F851FD /* PickOneViewController.m */,
+				FFDC024118CF444A00F851FD /* PickOneViewController.xib */,
+				FFAC99E318D00C4500F79D5A /* AboutViewController.h */,
+				FFAC99E418D00C4500F79D5A /* AboutViewController.m */,
+				FFAC99E518D00C4500F79D5A /* AboutViewController.xib */,
+				FFABD94D18D08862006D9CC4 /* ProblemListViewController.h */,
+				FFABD94E18D08862006D9CC4 /* ProblemListViewController.m */,
+				FFABD94F18D08862006D9CC4 /* ProblemListViewController.xib */,
+				FF69116A18D13FB30069511D /* StarViewController.h */,
+				FF69116B18D13FB30069511D /* StarViewController.m */,
+				FF69116C18D13FB30069511D /* StarViewController.xib */,
+				FF69116F18D1451D0069511D /* FeedBackViewController.h */,
+				FF69117018D1451D0069511D /* FeedBackViewController.m */,
+				FF69117118D1451D0069511D /* FeedBackViewController.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FF43BC7B18D1859D006F2B1B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FF43BC7C18D18675006F2B1B /* Problem.h */,
+				FF43BC7D18D18675006F2B1B /* Problem.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FF855B5618D0A5510060E2DF /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				FF855B5718D0A57A0060E2DF /* FileHandler.h */,
+				FF855B5818D0A57A0060E2DF /* FileHandler.m */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		FFA616E018CF092700FB15FA /* www */ = {
+			isa = PBXGroup;
+			children = (
+				FFB0A6A1199E0CA000DDC65E /* rainwatertrap.png */,
+				FFA6170318CF092700FB15FA /* phone pad.png */,
+				FFA6170418CF092700FB15FA /* zigzag.png */,
+				FFA616FB18CF092700FB15FA /* highlight.pack.js */,
+				FFA6170118CF092700FB15FA /* xcode.css */,
+				FFA616E118CF092700FB15FA /* code */,
+			);
+			path = www;
+			sourceTree = "<group>";
+		};
+		FFA616E118CF092700FB15FA /* code */ = {
+			isa = PBXGroup;
+			children = (
+				FFB0A6A3199E0D1800DDC65E /* Anagrams.html */,
+				FFB0A6A4199E0D1800DDC65E /* Combination Sum II.html */,
+				FFB0A6A5199E0D1800DDC65E /* Combination Sum.html */,
+				FFB0A6A6199E0D1800DDC65E /* Count and Say.html */,
+				FFB0A6A7199E0D1800DDC65E /* First Missing Positive.html */,
+				FFB0A6A8199E0D1800DDC65E /* Jump Game II.html */,
+				FFB0A6A9199E0D1800DDC65E /* Longest Valid Parentheses.html */,
+				FFB0A6AA199E0D1800DDC65E /* Multiply Strings.html */,
+				FFB0A6AB199E0D1800DDC65E /* Permutations II.html */,
+				FFB0A6AC199E0D1800DDC65E /* Permutations.html */,
+				FFB0A6AD199E0D1800DDC65E /* Pow(x, n).html */,
+				FFB0A6AE199E0D1800DDC65E /* Rotate Image.html */,
+				FFB0A6AF199E0D1800DDC65E /* Search for a Range.html */,
+				FFB0A6B0199E0D1800DDC65E /* Search in Rotated Sorted Array.html */,
+				FFB0A6B1199E0D1800DDC65E /* Search Insert Position.html */,
+				FFB0A6B2199E0D1800DDC65E /* Sudoku Solver.html */,
+				FFB0A6B3199E0D1800DDC65E /* Trapping Rain Water.html */,
+				FFB0A6B4199E0D1800DDC65E /* Valid Sudoku.html */,
+				FFB0A6B5199E0D1800DDC65E /* Wildcard Matching.html */,
+				FF73100B18D3EF9C00265818 /* 3Sum Closest.html */,
+				FF73100C18D3EF9C00265818 /* 3Sum.html */,
+				FF73100D18D3EF9C00265818 /* 4Sum.html */,
+				FF73100E18D3EF9C00265818 /* Add Two Numbers.html */,
+				FF73100F18D3EF9C00265818 /* Container With Most Water.html */,
+				FF73101018D3EF9C00265818 /* Divide Two Integers.html */,
+				FF73101118D3EF9C00265818 /* Generate Parentheses.html */,
+				FF73101218D3EF9C00265818 /* Implement strStr().html */,
+				FF73101318D3EF9C00265818 /* Integer to Roman.html */,
+				FF73101418D3EF9C00265818 /* Letter Combinations of a Phone Number.html */,
+				FF73101518D3EF9C00265818 /* Longest Common Prefix.html */,
+				FF73101618D3EF9C00265818 /* Longest Palindromic Substring.html */,
+				FF73101718D3EF9C00265818 /* Longest Substring Without Repeating Characters.html */,
+				FF73101818D3EF9C00265818 /* Median of Two Sorted Arrays.html */,
+				FF73101918D3EF9C00265818 /* Merge k Sorted Lists.html */,
+				FF73101A18D3EF9C00265818 /* Next Permutation.html */,
+				FF73101B18D3EF9C00265818 /* Palindrome Number.html */,
+				FF73101C18D3EF9C00265818 /* Regular Expression Matching.html */,
+				FF73101D18D3EF9C00265818 /* Remove Duplicates from Sorted Array.html */,
+				FF73101E18D3EF9C00265818 /* Remove Element.html */,
+				FF73101F18D3EF9C00265818 /* Remove Nth Node From End of List.html */,
+				FF73102018D3EF9C00265818 /* Reverse Integer.html */,
+				FF73102118D3EF9C00265818 /* Reverse Nodes in k-Group.html */,
+				FF73102218D3EF9C00265818 /* Roman to Integer.html */,
+				FF73102318D3EF9C00265818 /* String to Integer.html */,
+				FF73102418D3EF9C00265818 /* Substring with Concatenation of All Words.html */,
+				FF73102518D3EF9C00265818 /* Swap Nodes in Pairs.html */,
+				FF73102618D3EF9C00265818 /* Two Sum.html */,
+				FF73102718D3EF9C00265818 /* Valid Parentheses.html */,
+				FF73102818D3EF9C00265818 /* ZigZag Conversion.html */,
+			);
+			path = code;
+			sourceTree = "<group>";
+		};
+		FFDCD93F18D52F820038E506 /* LaunchImageTrans */ = {
+			isa = PBXGroup;
+			children = (
+				FFDCD94018D52FA40038E506 /* LaunchImageTransition.h */,
+				FFDCD94118D52FA40038E506 /* LaunchImageTransition.m */,
+			);
+			name = LaunchImageTrans;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF0735B218CEED6C0029DC50 /* CodersAnswer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF0735DF18CEED6C0029DC50 /* Build configuration list for PBXNativeTarget "CodersAnswer" */;
+			buildPhases = (
+				FF0735AF18CEED6C0029DC50 /* Sources */,
+				FF0735B018CEED6C0029DC50 /* Frameworks */,
+				FF0735B118CEED6C0029DC50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodersAnswer;
+			productName = CodersAnswer;
+			productReference = FF0735B318CEED6C0029DC50 /* CodersAnswer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF0735CD18CEED6C0029DC50 /* CodersAnswerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF0735E218CEED6C0029DC50 /* Build configuration list for PBXNativeTarget "CodersAnswerTests" */;
+			buildPhases = (
+				FF0735CA18CEED6C0029DC50 /* Sources */,
+				FF0735CB18CEED6C0029DC50 /* Frameworks */,
+				FF0735CC18CEED6C0029DC50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF0735D418CEED6C0029DC50 /* PBXTargetDependency */,
+			);
+			name = CodersAnswerTests;
+			productName = CodersAnswerTests;
+			productReference = FF0735CE18CEED6C0029DC50 /* CodersAnswerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF0735AB18CEED6C0029DC50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = com.rogers140;
+				TargetAttributes = {
+					FF0735CD18CEED6C0029DC50 = {
+						TestTargetID = FF0735B218CEED6C0029DC50;
+					};
+				};
+			};
+			buildConfigurationList = FF0735AE18CEED6C0029DC50 /* Build configuration list for PBXProject "CodersAnswer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FF0735AA18CEED6C0029DC50;
+			productRefGroup = FF0735B418CEED6C0029DC50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF0735B218CEED6C0029DC50 /* CodersAnswer */,
+				FF0735CD18CEED6C0029DC50 /* CodersAnswerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF0735B118CEED6C0029DC50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF73103F18D3EF9C00265818 /* Reverse Nodes in k-Group.html in Resources */,
+				FF73104218D3EF9C00265818 /* Substring with Concatenation of All Words.html in Resources */,
+				FF73103B18D3EF9C00265818 /* Remove Duplicates from Sorted Array.html in Resources */,
+				FF73103018D3EF9C00265818 /* Implement strStr().html in Resources */,
+				FF73102D18D3EF9C00265818 /* Container With Most Water.html in Resources */,
+				FFA6171D18CF092700FB15FA /* highlight.pack.js in Resources */,
+				FF73104418D3EF9C00265818 /* Two Sum.html in Resources */,
+				FF73102F18D3EF9C00265818 /* Generate Parentheses.html in Resources */,
+				FFB0A6C0199E0D1800DDC65E /* Pow(x, n).html in Resources */,
+				FF73103418D3EF9C00265818 /* Longest Palindromic Substring.html in Resources */,
+				FF8B548A18D54A6C00AF37C3 /* Images.xcassets in Resources */,
+				FF69117318D1451D0069511D /* FeedBackViewController.xib in Resources */,
+				FFB0A6B8199E0D1800DDC65E /* Combination Sum.html in Resources */,
+				FF73103E18D3EF9C00265818 /* Reverse Integer.html in Resources */,
+				FFB0A6C8199E0D1800DDC65E /* Wildcard Matching.html in Resources */,
+				FF73103318D3EF9C00265818 /* Longest Common Prefix.html in Resources */,
+				FFB0A6BD199E0D1800DDC65E /* Multiply Strings.html in Resources */,
+				FF0735C118CEED6C0029DC50 /* InfoPlist.strings in Resources */,
+				FF73104618D3EF9C00265818 /* ZigZag Conversion.html in Resources */,
+				FFB0A6BF199E0D1800DDC65E /* Permutations.html in Resources */,
+				FF73103A18D3EF9C00265818 /* Regular Expression Matching.html in Resources */,
+				FF73103118D3EF9C00265818 /* Integer to Roman.html in Resources */,
+				FFA6172218CF092700FB15FA /* xcode.css in Resources */,
+				FFB0A6BB199E0D1800DDC65E /* Jump Game II.html in Resources */,
+				FF73104018D3EF9C00265818 /* Roman to Integer.html in Resources */,
+				FFB0A6B9199E0D1800DDC65E /* Count and Say.html in Resources */,
+				FFB0A6A2199E0CA000DDC65E /* rainwatertrap.png in Resources */,
+				FF73103218D3EF9C00265818 /* Letter Combinations of a Phone Number.html in Resources */,
+				FF73103718D3EF9C00265818 /* Merge k Sorted Lists.html in Resources */,
+				FF73103C18D3EF9C00265818 /* Remove Element.html in Resources */,
+				FFB0A6C2199E0D1800DDC65E /* Search for a Range.html in Resources */,
+				FF73104118D3EF9C00265818 /* String to Integer.html in Resources */,
+				FFDC024318CF444A00F851FD /* PickOneViewController.xib in Resources */,
+				FF69116E18D13FB30069511D /* StarViewController.xib in Resources */,
+				FFB0A6C6199E0D1800DDC65E /* Trapping Rain Water.html in Resources */,
+				FFB0A6B6199E0D1800DDC65E /* Anagrams.html in Resources */,
+				FF73102E18D3EF9C00265818 /* Divide Two Integers.html in Resources */,
+				FF73103818D3EF9C00265818 /* Next Permutation.html in Resources */,
+				FFB0A6C3199E0D1800DDC65E /* Search in Rotated Sorted Array.html in Resources */,
+				FF73103918D3EF9C00265818 /* Palindrome Number.html in Resources */,
+				FFB0A6C4199E0D1800DDC65E /* Search Insert Position.html in Resources */,
+				FFB0A6BC199E0D1800DDC65E /* Longest Valid Parentheses.html in Resources */,
+				FF73102C18D3EF9C00265818 /* Add Two Numbers.html in Resources */,
+				FF73102918D3EF9C00265818 /* 3Sum Closest.html in Resources */,
+				FFA6172318CF092700FB15FA /* phone pad.png in Resources */,
+				FFB0A6BA199E0D1800DDC65E /* First Missing Positive.html in Resources */,
+				FF73104518D3EF9C00265818 /* Valid Parentheses.html in Resources */,
+				FFB0A6BE199E0D1800DDC65E /* Permutations II.html in Resources */,
+				FFB0A6B7199E0D1800DDC65E /* Combination Sum II.html in Resources */,
+				FF73102B18D3EF9C00265818 /* 4Sum.html in Resources */,
+				FF07360318CEEFE60029DC50 /* CodeViewController.xib in Resources */,
+				FF73103D18D3EF9C00265818 /* Remove Nth Node From End of List.html in Resources */,
+				FFA6172418CF092700FB15FA /* zigzag.png in Resources */,
+				FF73104318D3EF9C00265818 /* Swap Nodes in Pairs.html in Resources */,
+				FFB0A6C5199E0D1800DDC65E /* Sudoku Solver.html in Resources */,
+				FFAC99E718D00C4500F79D5A /* AboutViewController.xib in Resources */,
+				FF73103518D3EF9C00265818 /* Longest Substring Without Repeating Characters.html in Resources */,
+				FFB0A6C1199E0D1800DDC65E /* Rotate Image.html in Resources */,
+				FFB0A6C7199E0D1800DDC65E /* Valid Sudoku.html in Resources */,
+				FF73103618D3EF9C00265818 /* Median of Two Sorted Arrays.html in Resources */,
+				FF73102A18D3EF9C00265818 /* 3Sum.html in Resources */,
+				FFABD95118D08862006D9CC4 /* ProblemListViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF0735CC18CEED6C0029DC50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF0735DA18CEED6C0029DC50 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF0735AF18CEED6C0029DC50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF0735C718CEED6C0029DC50 /* AppDelegate.m in Sources */,
+				FF07360218CEEFE60029DC50 /* CodeViewController.m in Sources */,
+				FF0735EC18CEEE740029DC50 /* ICSDrawerController.m in Sources */,
+				FFDC024218CF444A00F851FD /* PickOneViewController.m in Sources */,
+				FF0735C318CEED6C0029DC50 /* main.m in Sources */,
+				FFAC99E618D00C4500F79D5A /* AboutViewController.m in Sources */,
+				FF855B5918D0A57A0060E2DF /* FileHandler.m in Sources */,
+				FF43BC7E18D18675006F2B1B /* Problem.m in Sources */,
+				FF69117218D1451D0069511D /* FeedBackViewController.m in Sources */,
+				FFABD95018D08862006D9CC4 /* ProblemListViewController.m in Sources */,
+				FF69116D18D13FB30069511D /* StarViewController.m in Sources */,
+				FF0735F318CEEF1F0029DC50 /* DrawerViewController.m in Sources */,
+				FF0735F018CEEEC60029DC50 /* MainViewController.m in Sources */,
+				FF0735ED18CEEE740029DC50 /* ICSDropShadowView.m in Sources */,
+				FFDCD94218D52FA40038E506 /* LaunchImageTransition.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF0735CA18CEED6C0029DC50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF0735DC18CEED6C0029DC50 /* CodersAnswerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF0735D418CEED6C0029DC50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF0735B218CEED6C0029DC50 /* CodersAnswer */;
+			targetProxy = FF0735D318CEED6C0029DC50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF0735BF18CEED6C0029DC50 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF0735C018CEED6C0029DC50 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FF0735D818CEED6C0029DC50 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF0735D918CEED6C0029DC50 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF0735DD18CEED6C0029DC50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ruogu Liu (85UHBNW4ZJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ruogu Liu (85UHBNW4ZJ)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FF0735DE18CEED6C0029DC50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ruogu Liu (8VDLFGTYQY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ruogu Liu (8VDLFGTYQY)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF0735E018CEED6C0029DC50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CodersAnswer/CodersAnswer-Prefix.pch";
+				INFOPLIST_FILE = "CodersAnswer/CodersAnswer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FF0735E118CEED6C0029DC50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ruogu Liu (8VDLFGTYQY)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CodersAnswer/CodersAnswer-Prefix.pch";
+				INFOPLIST_FILE = "CodersAnswer/CodersAnswer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FF0735E318CEED6C0029DC50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CodersAnswer.app/CodersAnswer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CodersAnswer/CodersAnswer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CodersAnswerTests/CodersAnswerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FF0735E418CEED6C0029DC50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CodersAnswer.app/CodersAnswer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CodersAnswer/CodersAnswer-Prefix.pch";
+				INFOPLIST_FILE = "CodersAnswerTests/CodersAnswerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF0735AE18CEED6C0029DC50 /* Build configuration list for PBXProject "CodersAnswer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF0735DD18CEED6C0029DC50 /* Debug */,
+				FF0735DE18CEED6C0029DC50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF0735DF18CEED6C0029DC50 /* Build configuration list for PBXNativeTarget "CodersAnswer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF0735E018CEED6C0029DC50 /* Debug */,
+				FF0735E118CEED6C0029DC50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF0735E218CEED6C0029DC50 /* Build configuration list for PBXNativeTarget "CodersAnswerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF0735E318CEED6C0029DC50 /* Debug */,
+				FF0735E418CEED6C0029DC50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF0735AB18CEED6C0029DC50 /* Project object */;
+}
