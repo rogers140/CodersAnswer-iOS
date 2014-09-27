@@ -112,6 +112,7 @@
     AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
     CodeViewController *codeView = [[CodeViewController alloc]init];
     codeView.problemName = problemName;
+    
     [delegate.mainViewController pushViewController:codeView animated:YES];
 }
 

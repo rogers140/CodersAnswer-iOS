@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>49BDA9EC-D26E-4943-B279-C2C82C54E546</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CodersAnswer</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0CF549AE06AF2AD6A81B25BDFD61A28B7B6BA244</key>
+		<string>https://github.com/rogers140/CodersAnswer-iOS</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CodersAnswer.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0CF549AE06AF2AD6A81B25BDFD61A28B7B6BA244</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/rogers140/CodersAnswer-iOS</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0CF549AE06AF2AD6A81B25BDFD61A28B7B6BA244</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0CF549AE06AF2AD6A81B25BDFD61A28B7B6BA244</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CodersAnswer</string>
+		</dict>
+	</array>
+</dict>
+</plist>

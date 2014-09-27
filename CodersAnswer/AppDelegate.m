@@ -14,6 +14,7 @@
 #import "FileHandler.h"
 #import "Problem.h"
 #import "LaunchImageTransition.h"
+#import "CodeViewController.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -22,8 +23,7 @@
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    
-    
+
     //init problemList
     self.problemList = [[NSArray alloc] initWithObjects:
                         //1-10
@@ -136,4 +136,18 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+//dealing rotate
+//- (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
+//{
+//    NSUInteger orientations = UIInterfaceOrientationMaskPortrait;
+//    NSLog(@"judge");
+//    if([[self.mainViewController topViewController] isKindOfClass:[CodeViewController class]])
+//    {
+//        orientations = UIInterfaceOrientationMaskAllButUpsideDown;
+//    }
+//    else {
+//        orientations = UIInterfaceOrientationMaskPortrait;
+//    }
+//    return orientations;
+//}
 @end

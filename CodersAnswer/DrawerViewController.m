@@ -221,6 +221,5 @@ static NSString * const kICSColorsViewControllerCellReuseId = @"kICSColorsViewCo
     self.view.userInteractionEnabled = YES;
 }
 
-
 @end
 
