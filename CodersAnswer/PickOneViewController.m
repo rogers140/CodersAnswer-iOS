@@ -166,7 +166,7 @@
     float width = self.view.bounds.size.width;
     float height = self.view.bounds.size.height;
     self.webView.transform = CGAffineTransformMakeRotation(M_PI_2);
-    NSLog(@"%f", self.heightofNaviStatus);
+    //NSLog(@"%f", self.heightofNaviStatus);
     self.webView.frame = CGRectMake(0, self.heightofNaviStatus, width + self.heightofNaviStatus, height - self.heightofNaviStatus);
     [self.webView stopLoading];
     [self.webView reload];
