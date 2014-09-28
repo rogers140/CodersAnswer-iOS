@@ -15,6 +15,9 @@
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
 @property (strong, nonatomic) NSArray *problemList;
 @property (strong, nonatomic) NSString *problemName;
+@property (strong, nonatomic) UIBarButtonItem *starButton;
+@property (strong, nonatomic) UIBarButtonItem *rotateButton;
+@property float heightofNaviStatus;
 
 @end
 
@@ -38,6 +41,13 @@
     //set title color
     NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName,nil];
     [self.navigationController.navigationBar setTitleTextAttributes:attributes];
+    //calculate the height of navigationbar and status bar
+    CGRect statusBarFrame = [[UIApplication sharedApplication] statusBarFrame];
+    self.heightofNaviStatus = self.navigationController.navigationBar.frame.size.height + statusBarFrame.size.height;
+    float width = self.view.bounds.size.width;
+    float height = self.view.bounds.size.height;
+    self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, width, height)];
+    [self.view insertSubview:self.webView atIndex:0];
     
     //add menu button
     UIImage *menuIcon = [UIImage imageNamed:@"icon_menu.png"];
@@ -77,8 +87,19 @@
         [customizedStarButton addTarget:self action:@selector(unStarClicker:) forControlEvents:UIControlEventTouchUpInside];
         isStarred = NO;
     }
-    UIBarButtonItem *starButton = [[UIBarButtonItem alloc] initWithCustomView:customizedStarButton];
-    self.navigationItem.rightBarButtonItem = starButton;
+    self.starButton = [[UIBarButtonItem alloc] initWithCustomView:customizedStarButton];
+    
+    //rotate button
+    UIImage *rotateIcon = [UIImage imageNamed:@"icon_landscape.png"];
+    CGRect frameRotateIcon = CGRectMake(0, 0, rotateIcon.size.width, rotateIcon.size.height);
+    UIButton *customizedRotateButton = [[UIButton alloc]initWithFrame:frameRotateIcon];
+    [customizedRotateButton setBackgroundImage:rotateIcon forState:UIControlStateNormal];
+    [customizedRotateButton addTarget:self action:@selector(rotate:) forControlEvents:UIControlEventTouchUpInside];
+    self.rotateButton = [[UIBarButtonItem alloc] initWithCustomView:customizedRotateButton];
+    
+    NSArray *buttonArray = [[NSArray alloc]initWithObjects:self.rotateButton, self.starButton, nil];
+    self.navigationItem.rightBarButtonItems = buttonArray;
+
 
 
     
@@ -119,8 +140,9 @@
     UIButton *customizedStarButton = [[UIButton alloc]initWithFrame:frameStarIcon];
     [customizedStarButton setBackgroundImage:starIcon forState:UIControlStateNormal];
     [customizedStarButton addTarget:self action:@selector(unStarClicker:) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *starButton = [[UIBarButtonItem alloc] initWithCustomView:customizedStarButton];
-    self.navigationItem.rightBarButtonItem = starButton;
+    self.starButton = [[UIBarButtonItem alloc] initWithCustomView:customizedStarButton];
+    NSArray *buttonArray = [[NSArray alloc]initWithObjects:self.rotateButton, self.starButton, nil];
+    self.navigationItem.rightBarButtonItems = buttonArray;
 }
 - (IBAction)unStarClicker:(id)sender
 {
@@ -135,7 +157,47 @@
     UIButton *customizedStarButton = [[UIButton alloc]initWithFrame:frameStarIcon];
     [customizedStarButton setBackgroundImage:starIcon forState:UIControlStateNormal];
     [customizedStarButton addTarget:self action:@selector(starClicker:) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *starButton = [[UIBarButtonItem alloc] initWithCustomView:customizedStarButton];
-    self.navigationItem.rightBarButtonItem = starButton;
+    self.starButton = [[UIBarButtonItem alloc] initWithCustomView:customizedStarButton];
+    NSArray *buttonArray = [[NSArray alloc]initWithObjects:self.rotateButton, self.starButton, nil];
+    self.navigationItem.rightBarButtonItems = buttonArray;
+}
+- (IBAction)rotate:(id)sender
+{
+    float width = self.view.bounds.size.width;
+    float height = self.view.bounds.size.height;
+    self.webView.transform = CGAffineTransformMakeRotation(M_PI_2);
+    NSLog(@"%f", self.heightofNaviStatus);
+    self.webView.frame = CGRectMake(0, self.heightofNaviStatus, width + self.heightofNaviStatus, height - self.heightofNaviStatus);
+    [self.webView stopLoading];
+    [self.webView reload];
+    //change icon of the button
+    UIImage *rotateIcon = [UIImage imageNamed:@"icon_portrait.png"];
+    CGRect frameRotateIcon = CGRectMake(0, 0, rotateIcon.size.width, rotateIcon.size.height);
+    UIButton *customizedRotateButton = [[UIButton alloc]initWithFrame:frameRotateIcon];
+    [customizedRotateButton setBackgroundImage:rotateIcon forState:UIControlStateNormal];
+    [customizedRotateButton addTarget:self action:@selector(unrotate:) forControlEvents:UIControlEventTouchUpInside];
+    self.rotateButton = [[UIBarButtonItem alloc] initWithCustomView:customizedRotateButton];
+    
+    NSArray *buttonArray = [[NSArray alloc]initWithObjects:self.rotateButton, self.starButton, nil];
+    self.navigationItem.rightBarButtonItems = buttonArray;
+    
+}
+- (IBAction)unrotate:(id)sender
+{
+    float width = self.view.bounds.size.width;
+    float height = self.view.bounds.size.height;
+    self.webView.transform = CGAffineTransformMakeRotation(0); //rotate back
+    self.webView.frame = CGRectMake(0, 0, width, height);
+    //change icon of the button
+    UIImage *rotateIcon = [UIImage imageNamed:@"icon_landscape.png"];
+    CGRect frameRotateIcon = CGRectMake(0, 0, rotateIcon.size.width, rotateIcon.size.height);
+    UIButton *customizedRotateButton = [[UIButton alloc]initWithFrame:frameRotateIcon];
+    [customizedRotateButton setBackgroundImage:rotateIcon forState:UIControlStateNormal];
+    [customizedRotateButton addTarget:self action:@selector(rotate:) forControlEvents:UIControlEventTouchUpInside];
+    self.rotateButton = [[UIBarButtonItem alloc] initWithCustomView:customizedRotateButton];
+    
+    NSArray *buttonArray = [[NSArray alloc]initWithObjects:self.rotateButton, self.starButton, nil];
+    self.navigationItem.rightBarButtonItems = buttonArray;
+    
 }
 @end
