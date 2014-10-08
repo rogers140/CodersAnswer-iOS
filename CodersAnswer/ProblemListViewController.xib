@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <objects>
@@ -16,7 +17,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="RN3-Z6-hfP">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="RN3-Z6-hfP">
                     <rect key="frame" x="0.0" y="64" width="320" height="508"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
@@ -24,7 +25,7 @@
                         <outlet property="delegate" destination="-1" id="QNj-Gd-qH8"/>
                     </connections>
                 </tableView>
-                <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Search problem" translatesAutoresizingMaskIntoConstraints="NO" id="aqd-Xy-0cU">
+                <searchBar contentMode="redraw" placeholder="Search problem" translatesAutoresizingMaskIntoConstraints="NO" id="aqd-Xy-0cU">
                     <rect key="frame" x="0.0" y="64" width="320" height="44"/>
                     <color key="tintColor" red="0.73333333329999995" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
                     <textInputTraits key="textInputTraits"/>
@@ -34,6 +35,15 @@
                 </searchBar>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="RN3-Z6-hfP" secondAttribute="bottom" id="2D4-QI-yNk"/>
+                <constraint firstItem="RN3-Z6-hfP" firstAttribute="top" secondItem="aqd-Xy-0cU" secondAttribute="top" id="3hG-2p-S4I"/>
+                <constraint firstItem="RN3-Z6-hfP" firstAttribute="leading" secondItem="aqd-Xy-0cU" secondAttribute="leading" id="c8n-Up-KZ2"/>
+                <constraint firstAttribute="trailing" secondItem="RN3-Z6-hfP" secondAttribute="trailing" id="nz4-XX-uNY"/>
+                <constraint firstItem="RN3-Z6-hfP" firstAttribute="top" secondItem="1" secondAttribute="top" constant="64" id="oCs-kG-yaA"/>
+                <constraint firstItem="RN3-Z6-hfP" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="rXc-8Y-Cjb"/>
+                <constraint firstItem="RN3-Z6-hfP" firstAttribute="trailing" secondItem="aqd-Xy-0cU" secondAttribute="trailing" id="z9n-i9-iIs"/>
+            </constraints>
         </view>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -107,7 +107,7 @@
 {
     [self dismissKeyboard];
     //NSDictionary *dic = [self.problemList objectAtIndex:indexPath.row];
-    Problem *problem = [self.problemList objectAtIndex:indexPath.row];
+    Problem *problem = [self.filteredProblemList objectAtIndex:indexPath.row];
     NSString *problemName = problem.problemName;
     AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
     CodeViewController *codeView = [[CodeViewController alloc]init];

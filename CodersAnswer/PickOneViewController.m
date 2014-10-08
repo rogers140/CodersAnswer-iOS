@@ -44,8 +44,8 @@
     //calculate the height of navigationbar and status bar
     CGRect statusBarFrame = [[UIApplication sharedApplication] statusBarFrame];
     self.heightofNaviStatus = self.navigationController.navigationBar.frame.size.height + statusBarFrame.size.height;
-    float width = self.view.bounds.size.width;
-    float height = self.view.bounds.size.height;
+    float width = [[UIScreen mainScreen] bounds].size.width;
+    float height = [[UIScreen mainScreen] bounds].size.height;
     self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, width, height)];
     [self.view insertSubview:self.webView atIndex:0];
     
@@ -163,8 +163,8 @@
 }
 - (IBAction)rotate:(id)sender
 {
-    float width = self.view.bounds.size.width;
-    float height = self.view.bounds.size.height;
+    float width = [[UIScreen mainScreen] bounds].size.width;
+    float height = [[UIScreen mainScreen] bounds].size.height;
     self.webView.transform = CGAffineTransformMakeRotation(M_PI_2);
     //NSLog(@"%f", self.heightofNaviStatus);
     self.webView.frame = CGRectMake(0, self.heightofNaviStatus, width + self.heightofNaviStatus, height - self.heightofNaviStatus);
@@ -184,8 +184,8 @@
 }
 - (IBAction)unrotate:(id)sender
 {
-    float width = self.view.bounds.size.width;
-    float height = self.view.bounds.size.height;
+    float width = [[UIScreen mainScreen] bounds].size.width;
+    float height = [[UIScreen mainScreen] bounds].size.height;
     self.webView.transform = CGAffineTransformMakeRotation(0); //rotate back
     self.webView.frame = CGRectMake(0, 0, width, height);
     //change icon of the button
